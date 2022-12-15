@@ -22,6 +22,12 @@ body {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .app-header {
   display: flex;
   align-items: center;
@@ -57,6 +63,7 @@ body {
 }
 
 .shopping-cart {
+  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
@@ -71,11 +78,25 @@ body {
 }
 .shopping-cart .shopping-cart-header {
   font-family: "Roboto Condensed", sans-serif;
-  margin: 1rem;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .shopping-cart .close-btn {
   cursor: pointer;
+}
+
+.home {
+  flex: 1;
+  background-image: url("./components/running.svg");
+  background-size: min(100vw, 500px);
+  background-repeat: no-repeat;
+  background-position: 90% 80%;
+}
+.home h1 {
+  margin: 2rem;
+  color: var(--dark-green);
+  font-family: "Anton", sans-serif;
+  font-size: 4rem;
 }
