@@ -100,3 +100,22 @@ body {
   font-family: "Anton", sans-serif;
   font-size: 4rem;
 }
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1rem;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+}
+.product h2 {
+  margin-top: auto;
+}
+.product img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000;
+}
