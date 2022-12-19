@@ -22,6 +22,11 @@ body {
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #root {
   height: 100vh;
   display: flex;
@@ -54,7 +59,7 @@ body {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-image: url("./components/icons/shopping-cart.svg");
+  background-image: url("./icons/shopping-cart.svg");
   background-size: contain;
 }
 .app-header .link:hover {
@@ -89,7 +94,7 @@ body {
 
 .home {
   flex: 1;
-  background-image: url("./components/running.svg");
+  background-image: url("./resources/running.svg");
   background-size: min(100vw, 500px);
   background-repeat: no-repeat;
   background-position: 90% 80%;

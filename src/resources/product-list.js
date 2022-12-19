@@ -8,25 +8,25 @@ const products = [
     id: "1",
     name: "Zapatillas Ultraboost DNA x Argentina",
     price: 61999,
-    img: img1,
+    img: img3,
   },
   {
     id: "2",
     name: "Zapatillas Adizero RC 4",
     price: 39999,
-    img: img2,
+    img: img1,
   },
   {
     id: "3",
     name: "Zapatillas X9000L3",
     price: 39999,
-    img: img3,
+    img: img4,
   },
   {
     id: "4",
     name: "Zapatillas Puremotion Adapt",
     price: 24999,
-    img: img4,
+    img: img2,
   },
 ];
 

@@ -1,4 +1,4 @@
-import shoppingCartIcon from "./icons/shopping-cart.svg";
+import shoppingCartIcon from "../icons/shopping-cart.svg";
 
 export default function ShoppingCartButton(props) {
   return (
