@@ -34,7 +34,18 @@ export default function App() {
   };
 
   const removeProductFromShoppingCart = (id) => {
-    const newShoppingCart = shoppingCart.filter((item) => item.id !== id);
+    let newShoppingCart;
+    if (shoppingCart.find((product) => product.id === id).cant > 1) {
+      newShoppingCart = shoppingCart.map((item) => {
+        if (item.id === id) {
+          return { ...item, cant: item.cant - 1 };
+        } else {
+          return item;
+        }
+      });
+    } else {
+      newShoppingCart = shoppingCart.filter((item) => item.id !== id);
+    }
     setShoppingCart(newShoppingCart);
   };
 
@@ -51,6 +62,8 @@ export default function App() {
         isVisible={shoppingCartVisibility}
         closeShoppingCart={closeShoppingCart}
         shoppingCart={shoppingCart}
+        addProduct={addProductToShoppingCart}
+        removeProduct={removeProductFromShoppingCart}
       />
       <Routes>
         <Route path="/" element={<Home />} />
