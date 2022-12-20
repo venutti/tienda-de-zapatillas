@@ -129,7 +129,7 @@ export default function ShoppingCart(props) {
         );
       })}
       <h2>
-        Total:{" $"}
+        Total: $
         {shoppingCart.reduce(
           (total, product) => total + product.price * product.cant,
           0
